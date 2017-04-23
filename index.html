@@ -21,6 +21,9 @@
     font-size: 23px;
     font-weight: 600;
   }
+  .logo {
+    font-size: 15px;
+  }
   
   .about {
     position: relative;
@@ -42,8 +45,29 @@
     padding: 25px 0;
   }
   
-  .card .card-image > img {
+  .card .card-image.programs > img {
     min-height: 400px;
+  }
+  
+  .consult {
+    height: 30vh;
+  }
+  
+  .consult-btn {
+    font-size: 12px;
+  }
+  
+  .consult-text {
+    font-size: 21px;
+  }
+  
+  .clear-marg {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  
+  section {
+    padding: 40px 0;
   }
   </style>
 </head>
@@ -58,12 +82,12 @@
         <div class="nav-wrapper white">
           <div class="container">
             <a href="#" class="brand-logo black-text">
-              <div class="valign-wrapper"><img src="http://ukraine.cursor.education/favicon/favicon-orange.png" alt="logo" width="45px">Ukraine</div>
+              <div class="valign-wrapper logo"><img src="http://ukraine.cursor.education/favicon/favicon-orange.png" alt="logo" width="45px">Ukraine</div>
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html" class="black-text">Sass</a></li>
-              <li><a href="badges.html" class="black-text">Components</a></li>
-              <li><a href="collapsible.html" class="black-text">JavaScript</a></li>
+              <li><a href="sass.html" class="black-text">Ментори</a></li>
+              <li><a href="badges.html" class="black-text">Job Support</a></li>
+              <li><a href="collapsible.html" class="black-text">Відгуки</a></li>
             </ul>
           </div>
         </div>
@@ -83,12 +107,12 @@
   </header>
   <main>
     <div class="grey lighten-5">
-      <div class="row container">
-        <div class="col s12 center-align text-title">
-          <span class="deep-orange-text text-darken-3">CURSOR</span><span class="grey-text">.EDUCATION</span>
-        </div>
-      </div>
       <section class="row container">
+        <div class="row">
+          <div class="col s12 center-align text-title">
+            <span class="deep-orange-text text-darken-3">CURSOR</span><span class="grey-text">.EDUCATION</span>
+          </div>
+        </div>
         <article class="col s8 about">
           <p>Ми - школа програмування.
             <br> І ми допомагаємо кожному реалізовувати себе в ІТ.</p>
@@ -208,60 +232,96 @@
           <h1 class="header center-align col s6 offset-s3">Навчальні <span class="grey darken-4 white-text header-main">програми</span></h1>
           <h6 class="center-align col s2 offset-s5 white">Навчання</h6>
         </div>
+        <div class="row clear-marg">
+          <div class="col s4">
+            <div class="card hoverable">
+              <div class="card-image programs">
+                <img src="http://ukraine.cursor.education/course-frontend.png">
+                <span class="card-title">
+                  <img src="http://ukraine.cursor.education/course-fe-logo.png">
+                  <h5 class="white-text">FRONT-END Education</h5>
+                  <h6 class="white-text">~30% ринку</h6>
+                  <h6 class="white-text">3 місяці</h6>
+                  <h6 class="white-text">Випускників: 136</h6>
+                  <h6 class="white-text">Початок: 24 квітня</h6>
+                </span>
+              </div>
+              <div class="card-action">
+                <a class="white waves-effect waves-blue btn blue-text text-darken-4">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card hoverable">
+              <div class="card-image programs">
+                <img src="http://ukraine.cursor.education/course-frontend.png">
+                <span class="card-title">
+                  <img src="http://ukraine.cursor.education/course-fe-logo.png">
+                  <h5 class="white-text">FRONT-END Education</h5>
+                  <h6 class="white-text">~30% ринку</h6>
+                  <h6 class="white-text">3 місяці</h6>
+                  <h6 class="white-text">Випускників: 136</h6>
+                  <h6 class="white-text">Початок: 24 квітня</h6>
+                </span>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn blue-text text-darken-4 disabled">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s4">
+            <div class="card hoverable">
+              <div class="card-image programs">
+                <img src="http://ukraine.cursor.education/course-frontend.png">
+                <span class="card-title">
+                  <img src="http://ukraine.cursor.education/course-fe-logo.png">
+                  <h5 class="white-text">FRONT-END Education</h5>
+                  <h6 class="white-text">~30% ринку</h6>
+                  <h6 class="white-text">3 місяці</h6>
+                  <h6 class="white-text">Випускників: 136</h6>
+                  <h6 class="white-text">Початок: 24 квітня</h6>
+                </span>
+              </div>
+              <div class="card-action">
+                <a class="waves-effect waves-light btn blue-text text-darken-4 disabled">Детальніше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="orange darken-4 consult valign-wrapper">
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="col s8 right-align">
+            <p class="white-text consult-text">Не знаєте з чого почати?
+              <br> Хочете дізнатись більше про сферу ІТ та карєрний розвиток?
+              <br> Ми допомагаємо кожному!</p>
+          </div>
+          <div class="col s4 right-align">
+            <button class="btn waves-effect waves-light white orange-text text-darken-4 consult-btn hoverable" type="submit" name="action">Безкоштовна консультація
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grey lighten-5 valign-wrapper">
+      <div class="container">
         <div class="row">
-          <div class="col s4">
-            <div class="card hoverable">
-              <div class="card-image">
-                <img src="http://ukraine.cursor.education/course-frontend.png">
-                <span class="card-title">
-                  <img src="http://ukraine.cursor.education/course-fe-logo.png">
-                  <h5 class="white-text">FRONT-END Education</h5>
-                  <h6 class="white-text">~30% ринку</h6>
-                  <h6 class="white-text">3 місяці</h6>
-                  <h6 class="white-text">Випускників: 136</h6>
-                  <h6 class="white-text">Початок: 24 квітня</h6>
-                </span>
-              </div>
-              <div class="card-action">
-                <a href="#" class="blue-text text-darken-4">Детальніше</a>
-              </div>
-            </div>
+          <div class="col s6 center-align">
+            <h4 class="row">Job Support</h4>
+            <img src="http://ukraine.cursor.education/job-support.png" alt="job support" class="row">
+            <button class="orange darken-4 btn waves-effect waves-light consult-btn row hoverable" type="submit" name="action">Читати детальніше
+              <i class="material-icons right">send</i>
+            </button>
           </div>
-          <div class="col s4">
-            <div class="card hoverable">
-              <div class="card-image">
-                <img src="http://ukraine.cursor.education/course-frontend.png">
-                <span class="card-title">
-                  <img src="http://ukraine.cursor.education/course-fe-logo.png">
-                  <h5 class="white-text">FRONT-END Education</h5>
-                  <h6 class="white-text">~30% ринку</h6>
-                  <h6 class="white-text">3 місяці</h6>
-                  <h6 class="white-text">Випускників: 136</h6>
-                  <h6 class="white-text">Початок: 24 квітня</h6>
-                </span>
-              </div>
-              <div class="card-action">
-                <a href="#" class="blue-text text-darken-4">Детальніше</a>
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <div class="card hoverable">
-              <div class="card-image">
-                <img src="http://ukraine.cursor.education/course-frontend.png">
-                <span class="card-title">
-                  <img src="http://ukraine.cursor.education/course-fe-logo.png">
-                  <h5 class="white-text">FRONT-END Education</h5>
-                  <h6 class="white-text">~30% ринку</h6>
-                  <h6 class="white-text">3 місяці</h6>
-                  <h6 class="white-text">Випускників: 136</h6>
-                  <h6 class="white-text">Початок: 24 квітня</h6>
-                </span>
-              </div>
-              <div class="card-action">
-                <a href="#" class="blue-text text-darken-4">Детальніше</a>
-              </div>
-            </div>
+          <div class="col s6 center-align">
+            <h4 class="row">Job Support</h4>
+            <img src="http://ukraine.cursor.education/job-support.png" alt="job support" class="row">
+            <button class="orange darken-4 btn waves-effect waves-light consult-btn row hoverable" type="submit" name="action">Читати детальніше
+              <i class="material-icons right">send</i>
+            </button>
           </div>
         </div>
       </div>
